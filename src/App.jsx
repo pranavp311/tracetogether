@@ -150,11 +150,11 @@ function m2px(m) { return m * PIXELS_PER_METRE }
 
 // ─── Main App ────────────────────────────────────────────────────────────────
 export default function App() {
-  const [scenario, setScenario] = useState('hdb')
-  const [mode, setMode] = useState('specification')
-  const [persons, setPersons] = useState(PRESETS.hdb.persons)
-  const [walls, setWalls] = useState(PRESETS.hdb.walls)
-  const [roomLabels, setRoomLabels] = useState(PRESETS.hdb.roomLabels)
+  const [scenario, setScenario] = useState('dormitory')
+  const [mode, setMode] = useState('execution')
+  const [persons, setPersons] = useState(PRESETS.dormitory.persons)
+  const [walls, setWalls] = useState(PRESETS.dormitory.walls)
+  const [roomLabels, setRoomLabels] = useState(PRESETS.dormitory.roomLabels)
   const [timeElapsed, setTimeElapsed] = useState(15)
   const [dragging, setDragging] = useState(null)
   const [hoveredLine, setHoveredLine] = useState(null)
